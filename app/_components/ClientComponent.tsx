@@ -1,7 +1,7 @@
 // ./components/ClientComponent.tsx
 "use client";
 import { VoiceProvider } from "@humeai/voice-react";
-import Messages from "./Messages";
+
 import Controls from "./Controls";
 import { useEffect } from "react";
 

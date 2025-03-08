@@ -1,5 +1,5 @@
 "use client";
-import { useVoice, VoiceReadyState } from "@humeai/voice-react";
+import { useVoice } from "@humeai/voice-react";
 import { useState, useEffect, useRef } from "react";
 import dynamic from "next/dynamic";
 
