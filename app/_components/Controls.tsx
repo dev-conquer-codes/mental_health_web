@@ -2,7 +2,7 @@
 import { useVoice, VoiceReadyState } from "@humeai/voice-react";
 import { useState, useEffect, useRef } from "react";
 import dynamic from "next/dynamic";
-
+import { LottieRefCurrentProps } from "lottie-react";
 // ✅ Dynamically import Lottie to prevent SSR issues
 const Lottie = dynamic(() => import("lottie-react"), { ssr: false });
 
@@ -15,7 +15,8 @@ export default function Controls() {
   const [isSpeaking, setIsSpeaking] = useState(false);
 
   // ✅ Create a reference for the Lottie animation
-  const lottieRef = useRef<any>(null);
+  const lottieRef = useRef<LottieRefCurrentProps>(null);
+
 
   // ✅ Track AI speech using `playerQueueLength`
   useEffect(() => {
